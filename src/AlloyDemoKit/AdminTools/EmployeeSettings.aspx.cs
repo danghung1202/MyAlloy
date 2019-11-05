@@ -14,7 +14,9 @@ using System.Web;
 
 namespace AlloyDemoKit.AdminTools
 {
-    [GuiPlugIn(DisplayName = "Employee Settings", Description = "Sets Employee Import Files", Area = PlugInArea.AdminConfigMenu, Url = "~/AdminTools/EmployeeSettings.aspx")]
+    [GuiPlugIn(DisplayName = "Employee Settings",
+    Description = "Sets Employee Import Files",
+    Area = PlugInArea.AdminConfigMenu, Url = "~/AdminTools/EmployeeSettings.aspx")]
     public partial class EmployeeSettings : System.Web.UI.Page
     {
         private const string AppDataPath = "App_Data";
@@ -28,7 +30,7 @@ namespace AlloyDemoKit.AdminTools
             if (!Page.IsPostBack)
             {
                 BindSettings();
-            }  
+            }
         }
 
         private void BindSettings()
@@ -41,7 +43,7 @@ namespace AlloyDemoKit.AdminTools
                 ExpertiseFileName.Text = model.ExpertiseFileName;
             }
         }
-        
+
         protected void FullRegion_MainRegion_Create_Click(object sender, EventArgs e)
         {
             DataGenerator generator = new DataGenerator();
@@ -58,7 +60,7 @@ namespace AlloyDemoKit.AdminTools
 
         protected void FullRegion_MainRegion_Save_Click(object sender, EventArgs e)
         {
-           
+
             EmployeeSettingsModel model = new EmployeeSettingsModel()
             {
                 ImportFileName = EmployeeFileName.Text,
