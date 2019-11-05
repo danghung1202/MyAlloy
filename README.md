@@ -1,8 +1,8 @@
-# AlloyDemoKit
+# Alloy Demo Kit
+
+A version of the Alloy site folk from [Episerver/AlloyDemoKit](https://github.com/episerver/AlloyDemoKit/)
 
 A version of the Alloy reference site containing additional features for demoing purposes.  This is not intended to be a starter solution but provides the ability to showcase a number of features and add-ons that may be needed for a demo.
-
-See the [wiki](https://github.com/episerver/AlloyDemoKit/wiki) for more information
 
 The site can be re-designed or updated quite easily.  There are a number of useful block and page types and Find is used by default for search.
 
@@ -15,6 +15,7 @@ If you are making commits to AlloyDemoKit you must ensure that you have removed 
 1. Attach the db under src/AlloyDemoKit/App_Data folder using SQL Server 2017
 2. Add host `alloy.local` and `alloymicro.local` 
 3. Create sites `alloy.local` and `alloymicro.local` in IIS point to src/AlloyDemoKit
+4. Change `connectionStrings`, add license file, epi find config 
 
 Run site at `http://alloy.local/`
 
