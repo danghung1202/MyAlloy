@@ -25,4 +25,13 @@ Admin: `http://alloy.local/EPiServer/CMS/`
 
 >Pass: 3p!Pass
 
+## Features
+
+1. Multiple sites
+2. Google map editor property
+3. Admin tools: Localization Resources, Search engine sitemap settings, Manage robots.txt
+4. Config tools: Google Analytics Administration
+5. Episerver Social
+6. AddOns
+
 
